@@ -1,0 +1,8 @@
+<Project>
+  <!-- 路径一律相对仓库根，不绑定某台机器用户名 -->
+  <PropertyGroup>
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <RestorePackagesPath>$(RepoRoot).nuget-packages</RestorePackagesPath>
+    <NuGetPackageRoot>$(RepoRoot).nuget-packages\</NuGetPackageRoot>
+  </PropertyGroup>
+</Project>

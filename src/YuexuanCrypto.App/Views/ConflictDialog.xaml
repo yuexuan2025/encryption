@@ -1,0 +1,36 @@
+<Window x:Class="YuexuanCrypto.App.Views.ConflictDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="目标已存在"
+        Width="460" Height="280"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="{StaticResource BgBrush}">
+    <Grid Margin="24">
+        <StackPanel>
+            <TextBlock Text="目标位置已有同名文件"
+                       FontSize="16" FontWeight="SemiBold"
+                       Foreground="{StaticResource InkBrush}"/>
+            <TextBlock x:Name="FileNameText"
+                       FontSize="13"
+                       Margin="0,12,0,0"
+                       TextWrapping="Wrap"
+                       Foreground="{StaticResource MutedBrush}"/>
+            <TextBlock Text="请选择处理方式："
+                       FontSize="12"
+                       Margin="0,16,0,8"
+                       Foreground="{StaticResource MutedBrush}"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button Content="覆盖" Style="{StaticResource PrimaryButton}" MinWidth="88" Margin="0,0,8,0" Click="OnOverwrite"/>
+                <Button Content="跳过" Style="{StaticResource SecondaryButton}" MinWidth="88" Margin="0,0,8,0" Click="OnSkip"/>
+                <Button Content="自动改名" Style="{StaticResource SecondaryButton}" MinWidth="88" Margin="0,0,8,0" Click="OnRename"/>
+                <Button Content="取消任务" Style="{StaticResource GhostButton}" MinWidth="88" Click="OnCancel"/>
+            </StackPanel>
+            <CheckBox x:Name="ApplyAllBox"
+                      Content="后续冲突应用同一选择"
+                      Margin="0,20,0,0"
+                      FontSize="12"
+                      Foreground="{StaticResource MutedBrush}"/>
+        </StackPanel>
+    </Grid>
+</Window>
