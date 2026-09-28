@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <RestorePackagesPath>C:\Users\10470\.nuget\packages</RestorePackagesPath>
+    <NuGetPackageRoot>C:\Users\10470\.nuget\packages\</NuGetPackageRoot>
+  </PropertyGroup>
+</Project>

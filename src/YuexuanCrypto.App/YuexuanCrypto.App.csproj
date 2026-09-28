@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>YuexuanCrypto.App</RootNamespace>
+    <AssemblyName>YuexuanCrypto</AssemblyName>
+    <AssemblyTitle>鏂囦欢鍔犲瘑</AssemblyTitle>
+    <Product>鏂囦欢鍔犲瘑</Product>
+    <Company>yuexuan</Company>
+    <Authors>yuexuan</Authors>
+    <Description>鏂囦欢鍔犲瘑宸ュ叿</Description>
+    <Version>1.0.0</Version>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\YuexuanCrypto.Core\YuexuanCrypto.Core.csproj" />
+  </ItemGroup>
+
+  <Target Name="CopyArgon2Deps" AfterTargets="Build">
+    <Copy SourceFiles="..\..\lib\Isopoh.Cryptography.Argon2.dll;..\..\lib\Isopoh.Cryptography.Blake2b.dll;..\..\lib\Isopoh.Cryptography.SecureArray.dll"
+          DestinationFolder="$(OutputPath)" SkipUnchangedFiles="true" />
+  </Target>
+</Project>
+
