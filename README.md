@@ -1,7 +1,6 @@
 文件加密（.yuexuan 容器）
 作者：yuexuan
 
-[![最新版本](https://img.shields.io/github/v/release/yuexuan2025/DLOUWebsiteCrawler?label=最新版本)](https://github.com/yuexuan2025/DLOUWebsiteCrawler/releases)
 [![平台](https://img.shields.io/badge/平台-Windows-green)](#)
 
 【这是什么】
