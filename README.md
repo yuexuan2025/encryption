@@ -1,5 +1,5 @@
 文件加密（.yuexuan 容器）
-作者：yuexuan
+
 
 [![平台](https://img.shields.io/badge/平台-Windows-green)](#)
 
