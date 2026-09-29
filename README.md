@@ -86,28 +86,6 @@
   · 旧版本格式（v1）仍可解密；新文件为 v2（Argon2id）
 
 
-【从源码构建】
-
-  依赖：
-    · .NET 9 SDK
-    · lib/ 目录下的 Isopoh.Cryptography.*（Argon2，已随仓库提供）
-
-  一键构建、测试并发布：
-    powershell -ExecutionPolicy Bypass -File scripts\build.ps1
-
-  产物输出到 dist\YuexuanCrypto.exe
-
-
-【项目结构】
-
-  src/YuexuanCrypto.Core/    加密核心（格式、密钥、流式加解密）
-  src/YuexuanCrypto.App/     WPF 界面
-  tests/                     测试
-  lib/                       Argon2 依赖
-  scripts/build.ps1          构建脚本
-  docs/compose/spec/         设计说明
-
-
 【安全边界（请如实理解）】
 
   · 「必须用配套软件」指的是防止常见工具直接打开；
